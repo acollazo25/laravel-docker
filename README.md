@@ -4,7 +4,7 @@
 
 ## Install
 Clone in root project directory.
-```bash
+```cmd
 git clone https://github.com/acollazo25/laravel-docker.git
 ```
 
@@ -29,7 +29,7 @@ REDIS_PORT=6379
 
 ## Launch
 Run docker compose
-```bash
+```cmd
 docker-compose up -d
 ```
 Open browser in http://localhost
