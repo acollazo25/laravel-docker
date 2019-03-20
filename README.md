@@ -1,1 +1,1 @@
-# Light docker implementation for laravel
+# Lightweight docker implementation for laravel
