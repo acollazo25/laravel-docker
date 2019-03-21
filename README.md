@@ -27,15 +27,15 @@ REDIS_PORT=6379
 ...
 ```
 
+### Configure nginx server
+Copy `nginx/app.conf.example` to `nginx/app.conf`
+
 ## Launch
 Up container services
 ```cmd
 docker-compose up -d
 ```
-Open browser in http://localhost
-
-### Configure nginx server
-Copy `nginx/app.conf.example` to `nginx/app.conf`
+Open browser in 🌐 http://localhost
 
 
 ## Laravel artisan CLI
