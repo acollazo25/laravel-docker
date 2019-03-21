@@ -10,7 +10,7 @@ git clone https://github.com/acollazo25/laravel-docker.git
 
 ## Configure
 
-### Configuring laravel environment
+### Configure laravel environment
 Laravel project `.env` example
 ```dotenv
 ...
@@ -27,8 +27,29 @@ REDIS_PORT=6379
 ...
 ```
 
+### Configure nginx server
+Copy `nginx/app.conf.example` to `nginx/app.conf`
+
+
+## Laravel artisan CLI
+
+### Move to laravel-docker directory
+```cmd
+cd laravel-docker
+```
+
+### Run migrations and seeders
+```cmd
+docker-compose run app php artisan migrate --seed
+```
+
+### Run tinker
+```cmd
+docker-compose run app php artisan tinker
+```
+
 ## Launch
-Run docker compose
+Up container services
 ```cmd
 docker-compose up -d
 ```
