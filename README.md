@@ -2,6 +2,10 @@
 
 > ⚠ USE ONLY THIS REPOSITORY FOR DEVELOPMENT PURPOSE
 
+
+## Features
+-   Include poppler-utils for PDF processing
+
 ## Install
 Clone in root project directory.
 ```cmd

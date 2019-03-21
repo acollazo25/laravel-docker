@@ -2,7 +2,7 @@ version: '3'
 services:
 
   app:
-    image: ender25/laravel-php-7.2-fpm:latest
+    image: ender25/laravel-php-7.2-fpm-poppler:latest
     container_name: laravel_app
     restart: unless-stopped
     tty: true
