@@ -27,6 +27,13 @@ REDIS_PORT=6379
 ...
 ```
 
+## Launch
+Up container services
+```cmd
+docker-compose up -d
+```
+Open browser in http://localhost
+
 ### Configure nginx server
 Copy `nginx/app.conf.example` to `nginx/app.conf`
 
@@ -47,10 +54,3 @@ docker-compose run app php artisan migrate --seed
 ```cmd
 docker-compose run app php artisan tinker
 ```
-
-## Launch
-Up container services
-```cmd
-docker-compose up -d
-```
-Open browser in http://localhost
