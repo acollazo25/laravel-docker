@@ -2,6 +2,9 @@
 
 > ⚠ USE ONLY THIS REPOSITORY FOR DEVELOPMENT PURPOSE
 
+## Laravel Compatibility
+✔ Laravel 5.8 ✔ Laravel 5.7 ✔ Laravel 5.6
+
 ## Install
 Clone in root project directory.
 ```cmd
@@ -33,6 +36,7 @@ Copy `nginx/app.conf.example` to `nginx/app.conf`
 ## Launch
 Up container services
 ```cmd
+cd laravel-docker
 docker-compose up -d
 ```
 Open browser in 🌐 http://localhost
@@ -43,6 +47,16 @@ Open browser in 🌐 http://localhost
 ### Move to laravel-docker directory
 ```cmd
 cd laravel-docker
+```
+
+### Run key generation
+```cmd
+docker-compose run app php artisan key:generate
+```
+
+### Run storage link creation
+```cmd
+docker-compose run app php artisan storage:link
 ```
 
 ### Run migrations and seeders
