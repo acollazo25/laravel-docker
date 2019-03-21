@@ -22,7 +22,7 @@ DB_CONNECTION=mysql
 DB_HOST=db
 DB_PORT=3306
 DB_DATABASE=laravel
-DB_USERNAME=root
+DB_USERNAME=laravel
 DB_PASSWORD=secret
 ...
 REDIS_HOST=redis
