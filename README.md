@@ -51,20 +51,20 @@ cd laravel-docker
 
 ### Run key generation
 ```cmd
-docker-compose run app php artisan key:generate
+docker-compose run --rm app php artisan key:generate
 ```
 
 ### Run storage link creation
 ```cmd
-docker-compose run app php artisan storage:link
+docker-compose run --rm app php artisan storage:link
 ```
 
 ### Run migrations and seeders
 ```cmd
-docker-compose run app php artisan migrate --seed
+docker-compose run --rm app php artisan migrate --seed
 ```
 
 ### Run tinker
 ```cmd
-docker-compose run app php artisan tinker
+docker-compose run --rm app php artisan tinker
 ```
