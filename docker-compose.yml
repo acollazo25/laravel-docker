@@ -34,7 +34,7 @@ services:
     environment:
       MYSQL_DATABASE: laravel
       MYSQL_USER: laravel
-      MYSQL_PASSWORD: secret
+      MYSQL_PASSWORD: secret012
       MYSQL_RANDOM_ROOT_PASSWORD: "yes"
     volumes:
       - dbdata:/var/lib/mysql/
