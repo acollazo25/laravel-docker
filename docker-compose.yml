@@ -3,7 +3,6 @@ services:
 
   app:
     image: ender25/laravel-php-7.2-fpm:poppler-utils
-    container_name: laravel_app
     restart: unless-stopped
     tty: true
     working_dir: /var/www
@@ -15,7 +14,6 @@ services:
 
   server:
     image: nginx:alpine
-    container_name: laravel_server
     restart: unless-stopped
     tty: true
     ports:
@@ -29,7 +27,6 @@ services:
 
   db:
     image: mariadb:10
-    container_name: laravel_db
     restart: unless-stopped
     tty: true
     ports:
@@ -46,7 +43,6 @@ services:
 
   redis:
     image: redis
-    container_name: laravel_redis
     restart: unless-stopped
     networks:
       - app-network
