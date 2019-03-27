@@ -49,6 +49,11 @@ Open browser in 🌐 http://localhost
 cd laravel-docker
 ```
 
+### Install dependencies
+```cmd
+docker-compose run --rm app composer install
+```
+
 ### Run key generation
 ```cmd
 docker-compose run --rm app php artisan key:generate
