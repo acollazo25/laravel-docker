@@ -17,7 +17,6 @@ RUN apt-get update && apt-get install -y \
     unzip \
     git \
     libxml2-dev \
-    php-soap \
     curl
 
 # Clear cache
