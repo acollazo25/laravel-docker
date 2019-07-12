@@ -30,7 +30,11 @@ RUN docker-php-ext-install gd
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 # Install extensions
-RUN docker-php-ext-install soap
+RUN apt-get install -y \
+    libxml2-dev \
+    php-soap \
+  && apt-get clean -y \
+  && docker-php-ext-install soap
 
 # Add user for laravel application
 RUN groupadd -g 1000 www
