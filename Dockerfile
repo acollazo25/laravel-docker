@@ -18,6 +18,9 @@ RUN apt-get update && apt-get install -y \
     libxml2-dev \
     curl
 
+# Install codec dependencies
+RUN apt-get install -y ffmpeg
+
 # Clear cache
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
